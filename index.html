@@ -1,0 +1,182 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Scrapbook</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Days Counter -->
+  <div class="days-together">
+    Days Together: <span id="days">389</span>
+  </div>
+
+  <!-- Music Controls -->
+  <button class="music-btn" onclick="playMusic()" aria-label="Toggle background music">
+    <span class="icon">▶️</span> <span class="label">Play Music</span>
+  </button>
+  <audio id="bg-music" loop>
+    <source src="want.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Voice Note -->
+  <button class="voice-btn" onclick="playNote()" aria-label="Play voice note">Play My Voice ❤</button>
+  <audio id="voice-note">
+    <source src="voice-note.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <main class="scrapbook">
+
+    <!-- Memory Pages -->
+    <section class="page" id="page0">
+      <header><h1>Our One-Year Anniversary</h1></header>
+      <h2>A Year of Us ❤️</h2>
+      <img src="photo1.jpeg" alt="Memory 1" />
+      <p>From our very first hello to this beautiful milestone, every second with you has been magic.</p>
+    </section>
+
+    <section class="page hidden" id="page1">
+      <h2>Your Smile 😊</h2>
+      <img src="photo2.jpeg" alt="Memory 2" />
+      <p>That smile lights up even my darkest days. Thank you for making me feel at home.</p>
+    </section>
+
+    <section class="page hidden" id="page2">
+      <h2>Our Adventure 🗺️</h2>
+      <img src="photo3.jpeg" alt="Memory 3" />
+      <p>Every new place becomes my favorite place when I'm with you.</p>
+    </section>
+
+    <section class="page hidden" id="page3">
+      <h2>Laugh-Filled Days 🎡</h2>
+      <img src="photo4.jpeg" alt="Memory 4" />
+      <p>We’ve shared laughter, snacks, and the best company—every moment priceless with you.</p>
+    </section>
+
+    <section class="page hidden" id="page4">
+      <h2>Cozy Evenings 🔥</h2>
+      <img src="photo5.jpg" alt="Memory 5" />
+      <p>Your warmth is my favorite blanket. Early mornings and late nights with you feel like home.</p>
+    </section>
+
+    <section class="page hidden" id="page5">
+      <h2>Sunset Strolls 🌅</h2>
+      <img src="photo6.jpg" alt="Memory 6" />
+      <p>You light up my day with your smile. Just thinking of your name makes my heart skip a beat.</p>
+    </section>
+
+    <!-- Poem Page -->
+    <section class="page hidden" id="page6">
+      <h2>Love Letters & Poems ✍️</h2>
+      <article class="letter">
+        <p><em>  Your laugh is my favorite song, your warmth my safe harbor—<br>
+      cozier than the sun.<br><br>
+
+      What about my eyes gives off kindness?<br><br>
+
+      Can you become so entranced in these beautiful, dark, kind eyes that you lose yourself?<br><br>
+
+      Give yourself, be yourself, to leave yourself?<br><br>
+
+      Tell me, what do you see when you look at me?<br><br>
+
+      Tell me, what do you see when you see my lips?<br>
+      These lips that speak sweet words and psalms of melodies to you.<br><br>
+
+      Tell me, what do you hear when you’re so near<br>
+      that you can hear my heartbeat?<br>
+      This heartbeat of mine beating faster and faster as you get closer and closer.<br><br>
+
+      Tell me, what do you feel when you grab these shoulders<br>
+      and my hands wrap around your waist?<br><br>
+
+      As we intertwine, spinning to the music, do you think you could lose me?<br>
+      Do you believe we could be?<br><br>
+
+      Spinning endlessly as our fingertips touch, our minds grow near and near.<br>
+      What do you hear?<br><br>
+
+      As we embrace each other emotionally and physically,<br>
+      can you tell me what you see? What do you feel?<br><br>
+
+      Will you let me swallow you whole,<br>
+      enveloping us both in each other? I hope I’m not a bother… sometimes I wonder.<br><br>
+
+      As you read this, do you wonder, “Can he lead me?”<br>
+      Like two tango partners, I’m leading the steps<br>
+      as you follow, do you find comfort?<br><br>
+
+      Can you conform to your true feelings,<br>
+      let loose, and let go, but never let go of these hands?<br><br>
+
+      These hands that slightly touch, these lips that softly tell,<br>
+      these words that you fell for.<br>
+      With me, do you want to be led?<br><br>
+
+      Like a closed book, do you want to be…<br><br>
+
+      — [Sulemani Samuel]</em></p>
+      </article>
+    </section>
+
+    <!-- Quiz Page -->
+    <section class="page hidden" id="page7">
+      <h2>Quiz: How Well Do You Know Us? 🤔</h2>
+      <form id="loveQuiz">
+        <div class="question">
+          <p>1. What was our very first movie together?</p>
+          <label><input type="radio" name="q1" value="A" /> A) Moana</label><br />
+          <label><input type="radio" name="q1" value="B" /> B) Mani & Gina</label><br />
+          <label><input type="radio" name="q1" value="C" /> C) Lion King</label>
+        </div>
+
+        <div class="question">
+          <p>2. Where did I take you on our first date?</p>
+          <label><input type="radio" name="q2" value="A" /> A) That little coffee shop</label><br />
+          <label><input type="radio" name="q2" value="B" /> B) The city park</label><br />
+          <label><input type="radio" name="q2" value="C" /> C) Brazen Restaurant</label>
+        </div>
+
+        <div class="question">
+          <p>3. What’s her favorite ice cream flavor?</p>
+          <label><input type="radio" name="q3" value="A" /> A) Mint chocolate chip</label><br />
+          <label><input type="radio" name="q3" value="B" /> B) Strawberry</label><br />
+          <label><input type="radio" name="q3" value="C" /> C) Cookies & Cream</label>
+        </div>
+
+        <div class="question">
+          <p>4. What do I appreciate about you the most?</p>
+          <label><input type="radio" name="q4" value="A" /> A) Your smile</label><br />
+          <label><input type="radio" name="q4" value="B" /> B) Your compassion</label><br />
+          <label><input type="radio" name="q4" value="C" /> C) Your open-mindedness</label>
+        </div>
+
+        <button type="button" class="quiz-btn" onclick="submitQuiz()">Submit Answers</button>
+      </form>
+
+      <div id="quizResult" class="hidden">
+        <h3>Your Score: <span id="score">0</span>/4</h3>
+        <p id="resultMsg"></p>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="controls" aria-label="Page navigation">
+      <button onclick="prevPage()">⬅️ Back</button>
+      <button onclick="nextPage()">Next ➡️</button>
+    </nav>
+  </main>
+
+  <!-- Progress Timeline -->
+  <div class="timeline">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
